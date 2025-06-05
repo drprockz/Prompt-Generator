@@ -1,16 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const cors = require('cors');
-const path = require('path');
-const app = express();
-const PORT = process.env.PORT || 3001;
+  let text = raw.trim().replace(/\s+/g, ' ');
+  text = text.charAt(0).toUpperCase() + text.slice(1);
+  if (!/[.!?]$/.test(text)) text += '.';
+  return text;
 
-app.use(cors());
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../frontend')));
-
-
+  const lines = [
+    'You are an expert software engineer.',
+    context ? `Project Context: ${context}` : null,
+    `Task: ${refined}`,
+    'Respond with a concise, well-structured solution and include code snippets where relevant.'
+  ].filter(Boolean);
+  return lines.join('\n');
 // Simple in-memory store
 let prompts = [];
 let nextId = 1;

@@ -10,8 +10,8 @@ Develop a comprehensive prompt generator application that includes both frontend
 2. **Prompt Refinement**  
     Automatically refactor raw prompts into grammatically correct and well-structured English.
 
-3. **LLM Optimization**  
-    Enhance refined prompts to ensure they are clear, concise, and highly effective for LLMs.
+3. **LLM Optimization**
+    Optimize refined prompts so they are clear, concise, and formatted in a style that LLMs can easily interpret. The backend generates prompts using a short instructional template similar to the "v0" style.
 
 4. **Project Context**  
     Allow users to define the context of their current software project (such as application type, technologies, or desired functionalities). The generator tailors prompts based on this context.
