@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Prompt Generator</h1>
+        <div class="input-group">
+            <label for="context">Project Context</label>
+            <input id="context" type="text" placeholder="e.g. React web app" />
+        </div>
+        <div class="input-group">
+            <label for="raw">Raw Prompt</label>
+            <textarea id="raw" rows="4" placeholder="Describe your task"></textarea>
+        </div>
+        <button id="generate">Generate Prompt</button>
+
+        <h2>Refined Prompt</h2>
+        <textarea id="refined" rows="3"></textarea>
+        <h2>Optimized Prompt</h2>
+        <textarea id="optimized" rows="3"></textarea>
+        <button id="save">Save Changes</button>
+
+        <h2>Prompt History</h2>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
