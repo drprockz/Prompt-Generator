@@ -31,8 +31,10 @@ The application should be efficient, scalable, and user-friendly. Use modern web
 
 ## Running the application
 
+
 1. Install dependencies for the backend and start the server. The backend also
    serves the static frontend files, so no separate web server is needed:
+
 
 ```bash
 cd backend
@@ -40,7 +42,9 @@ npm install
 npm start
 ```
 
+
 The server listens on port `3001` by default and serves the frontend at
 `http://localhost:3001/`.
 
 2. Open `http://localhost:3001/` in your browser.
+
