@@ -1,5 +1,5 @@
-// When served from the backend express app the same origin is used
-const apiBase = '';
+
+const apiBase = 'http://localhost:3005';
 
 async function fetchHistory() {
     const res = await fetch(apiBase + '/prompts');
