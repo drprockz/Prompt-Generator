@@ -28,3 +28,17 @@ Develop a comprehensive prompt generator application that includes both frontend
 ---
 
 The application should be efficient, scalable, and user-friendly. Use modern web development technologies for both frontend and backend to ensure optimal performance and maintainability. Structure the application for easy integration of new LLMs and features in the future.
+
+## Running the application
+
+1. Install dependencies for the backend and start the server:
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+The server listens on port `3001` by default.
+
+2. Open `frontend/index.html` in your browser. Ensure the backend is accessible from the same host so that API calls work correctly.
